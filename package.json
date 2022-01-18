@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "dotenv": "^14.2.0",
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7",
+    "nodemon": "^2.0.15"
+  },
+  "name": "studyspace",
+  "description": "coding project :P",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chiragxarora/StudySpace.git"
+  },
+  "author": "PCM",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chiragxarora/StudySpace/issues"
+  },
+  "homepage": "https://github.com/chiragxarora/StudySpace#readme"
+}
