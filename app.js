@@ -1,7 +1,10 @@
 const express = require("express");
+const userRouter  = require("./routes/userRoutes.js")
 const app = express();
+const cookieParser = require("cookie-parser")
 
 app.use(express.json());
+app.use(cookieParser());
 
 app.use(function (req, res, next) {
   // Website you wish to allow to connect
@@ -26,6 +29,8 @@ app.use(function (req, res, next) {
   // Pass to next layer of middleware
   next();
 });
+
+app.use('/api/v1/users',userRouter)
 
 app.get('/', (req, res) => {
   console.log('call from client')
